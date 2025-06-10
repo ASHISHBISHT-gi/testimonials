@@ -19,7 +19,7 @@ main{
     flex-direction: column;
 }
 .card{
-    padding:10%;
+    padding:9%;
 }
 .head{
     display:flex;
