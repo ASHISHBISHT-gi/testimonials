@@ -24,6 +24,7 @@ main{
 .card{
     padding:2.3em;
     border-radius:2%;
+    box-shadow:0.5rem 1rem 1rem 1.2rem rgba(0, 0, 0, 0.2);
 }
 .head{
     display:flex;
@@ -60,6 +61,7 @@ img{
     font-size:1.12rem;
     font-weight:600;
     color:hsl(0, 0%, 100%);
+    margin-top:0.1em;
 }
 .detail{
     color:hsl(0, 0%, 100%);
