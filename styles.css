@@ -1,3 +1,4 @@
+/* Mobile */
 @media screen and (max-width:73.0625em) {
 body,html{
     margin:0;
@@ -8,9 +9,10 @@ body,html{
     display: flex;
     /* justify-content: center; */
     /* align-items:center; */
-    border:1px solid red;
+    /* border:1px solid red; */
     flex-shrink: 8;
     /* flex-direction: column; */
+}
 main{
     border:1px solid green;
     font-size:13px;
@@ -40,14 +42,17 @@ img{
 .status>p:first-child{
     margin-bottom:0;
     font-size:0.9rem;
-    font-weight:500;
+    font-weight:600;
     color:hsl(0, 0%, 100%);
 }
 .status>p:nth-child(2){
     margin-top:0.1em;
     color:hsl(0, 0%, 100%);
 }
-.status3>p{
+#status3>p{
+    color:hsl(0, 0%, 7%);
+}
+#status5>p{
     color:hsl(0, 0%, 7%);
 }
 
@@ -68,6 +73,9 @@ img{
 .card3{
     background-color:hsl(0, 0%, 100%);
 }
+.card3>.discription,.card3>.detail,.card5>.discription,.card5>.detail{
+    color:hsl(0, 0%, 7%);
+}
 
 .card4{
     background-color:hsl(219, 29%, 14%);
@@ -82,4 +90,13 @@ img{
 
 
 
+}
+
+/* Desktop */
+@media screen and (max-width:73.0625em) {
+body,html{
+    margin:0;
+    padding:0;
+    width:100vw;
+}
 }
