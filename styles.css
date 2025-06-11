@@ -1,104 +1,234 @@
 /* Mobile */
-@media screen and (max-width:73.0625em) {
-body,html{
-    margin:0;
-    padding:0;
-    width:100vw;
-}
-.container{
-    display: flex;
-    /* justify-content: center; */
-    /* align-items:center; */
-    /* border:1px solid red; */
-    flex-shrink: 8;
-    /* flex-direction: column; */
-}
-main{
-    border:1px solid green;
-    font-size:13px;
-    display:flex;
-    padding:10% 9%;
-    flex-direction: column;
-    gap:2rem;
-}
-.card{
-    padding:2.3em;
-    border-radius:2%;
-    box-shadow:0.5rem 1rem 1rem 1.2rem rgba(0, 0, 0, 0.2);
-}
-.head{
-    display:flex;
-    align-items:center;
-    gap:0.7rem;
-}
-.head1>img,.head4>img{
-    border:0.15em solid hsl(264, 82%, 80%);
-}
+@media screen and (max-width: 73.0625em) {
 
-img{
-    height:2rem;
-    width:2rem;
-    border-radius:1rem;
-}
-.status>p:first-child{
-    margin-bottom:0;
-    font-size:0.9rem;
-    font-weight:600;
-    color:hsl(0, 0%, 100%);
-}
-.status>p:nth-child(2){
-    margin-top:0.1em;
-    color:hsl(0, 0%, 100%);
-}
-#status3>p{
-    color:hsl(0, 0%, 7%);
-}
-#status5>p{
-    color:hsl(0, 0%, 7%);
-}
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
 
-.discription{
-    font-size:1.12rem;
-    font-weight:600;
-    color:hsl(0, 0%, 100%);
-    margin-top:0.1em;
-}
-.detail{
-    color:hsl(0, 0%, 100%);
-}
-.card1{
-    background-color:hsl(263, 55%, 52%);
-}
-.card2{
-    background-color:hsl(217, 19%, 35%);
-}
-.card3{
-    background-color:hsl(0, 0%, 100%);
-}
-.card3>.discription,.card3>.detail,.card5>.discription,.card5>.detail{
-    color:hsl(0, 0%, 7%);
-}
+    .container {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items:center; */
+        /* border:1px solid red; */
+        flex-shrink: 8;
+        /* flex-direction: column; */
+        background-color:hsl(0, 0%, 93%);
+    }
 
-.card4{
-    background-color:hsl(219, 29%, 14%);
-}
+    main {
+        border: 1px solid green;
+        font-size: 13px;
+        display: flex;
+        padding: 10% 9%;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-.card5{
-    background-color:hsl(0, 0%, 81%);
-}
+    .card {
+        padding: 2.3em;
+        border-radius: 2%;
+        box-shadow: 0.5rem 1rem 1rem 1.2rem rgba(0, 0, 0, 0.2);
+    }
 
+    .head {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+    }
 
+    .head1>img,
+    .head4>img {
+        border: 0.15em solid hsl(264, 82%, 80%);
+    }
 
+    img {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 1rem;
+    }
 
+    .status>p:first-child {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+    }
 
+    .status>p:nth-child(2) {
+        margin-top: 0.1em;
+        color: hsl(0, 0%, 100%);
+    }
 
+    #status3>p {
+        color: hsl(0, 0%, 7%);
+    }
+
+    #status5>p {
+        color: hsl(0, 0%, 7%);
+    }
+
+    .discription {
+        font-size: 1.12rem;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        margin-top: 0.1em;
+    }
+
+    .detail {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .card1 {
+        background-color: hsl(263, 55%, 52%);
+    }
+
+    .card2 {
+        background-color: hsl(217, 19%, 35%);
+    }
+
+    .card3 {
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .card3>.discription,
+    .card3>.detail,
+    .card5>.discription,
+    .card5>.detail {
+        color: hsl(0, 0%, 7%);
+    }
+
+    .card4 {
+        background-color: hsl(219, 29%, 14%);
+    }
+
+    .card5 {
+        background-color: hsl(0, 0%, 100%);
+    }
 }
 
 /* Desktop */
-@media screen and (max-width:73.0625em) {
-body,html{
-    margin:0;
-    padding:0;
-    width:100vw;
-}
+@media screen and (min-width: 73.0625em) {
+
+    html,
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+        flex-shrink: 8;
+        height: 100vh;
+        width: 100vw;
+        /* flex-direction: column; */
+        background-color:hsl(0, 0%, 93%);
+    }
+
+    main {
+        /* border: 1px solid green; */
+        font-size: 13px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* padding:10% 9%; */
+        gap:2rem;
+        width:70%;
+    }
+
+    .card {
+        padding: 1em 2.3em;
+        border-radius: 2%;
+        box-shadow: 1.5rem 2rem 1rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+    }
+
+    .head1>img,
+    .head4>img {
+        border: 0.15em solid hsl(264, 82%, 80%);
+    }
+
+    img {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 1rem;
+    }
+
+    .status>p:first-child {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .status>p:nth-child(2) {
+        margin-top: 0.1em;
+        color: hsl(0, 0%, 100%);
+    }
+
+    #status3>p {
+        color: hsl(0, 0%, 7%);
+    }
+
+    #status5>p {
+        color: hsl(0, 0%, 7%);
+    }
+
+    .discription {
+        font-size: 1.12rem;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        margin-top: 0.1em;
+    }
+
+    .detail {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .card1 {
+        background-color: hsl(263, 55%, 52%);
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+
+    .card2 {
+        background-color: hsl(217, 19%, 35%);
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .card3 {
+        background-color: hsl(0, 0%, 100%);
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .card3>.discription,
+    .card3>.detail,
+    .card5>.discription,
+    .card5>.detail {
+        color: hsl(0, 0%, 7%);
+    }
+
+    .card4 {
+        background-color: hsl(219, 29%, 14%);
+        grid-row: 2;
+        grid-column: 2 / 4;
+    }
+
+    .card5 {
+        background-color: hsl(0, 0%, 100%);
+        grid-row: 1 / 3;
+        grid-column: 4;
+    }
 }
